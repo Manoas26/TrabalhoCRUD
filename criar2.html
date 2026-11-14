@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criacao</title>
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Iceberg&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Atomic+Age&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <meu-header></meu-header>
+    <meu-nav></meu-nav>
+
+
+
+    <h2>Gerenciador de Avisos (CRUD)</h2>
+    <h3>Criar Aviso</h3>
+    <div id="mensagem">Preencha os dados para criar uma nova aviso.</div>
+    
+    <!-- Formulário para Criar -->
+    <form id="avisoForm">    
+        <input type="hidden" id="avisoId">
+        <input type="text" id="avisoTitle" placeholder="Título da aviso" required>
+        <button type="submit" id="submitBtn">Criar aviso</button>
+    </form>
+
+    <div id="avisosContainer">   
+    </div>
+    <meu-footer></meu-footer>
+
+
+    <script type="module" src="js/criar2.js"></script>
+    <script src="js/components.js"></script>
+
+    <!-- <script>
+        
+        const avisoForm = document.querySelector('#avisoForm');
+        const avisoTitleInput = document.querySelector('#avisoTitle');
+        
+        const PUBLISHABLE_KEY = 'sb_publishable_EHfkh_trzI6LdvCrSFj-MQ_-QcYvmcd';
+        const API_URL = 'https://fhxobambvomypoovedvh.supabase.co/rest/v1/Tabelalegal';
+
+      
+        
+        //Ouvintes de eventos
+        avisoForm.addEventListener('submit', criarAviso);
+        
+        async function criarAviso(e) {
+            e.preventDefault(); 
+
+            const avisoData = {
+                aviso: avisoTitleInput.value
+            };
+            
+            try {
+                const response = await fetch(API_URL, {
+                    method: 'POST',
+                    headers: {
+                    apikey: PUBLISHABLE_KEY,
+                    'Content-Type': 'application/json',
+                    Prefer: 'return=representation'
+                    },
+                    body: JSON.stringify(avisoData)
+                });
+                const newAviso = await response.json();
+                mensagem.innerHTML = `Aviso criado com sucesso! <br>
+                                Preencha o formulário novamente para criar outro aviso.`;
+                avisoForm.reset();
+            } catch (error) {
+                console.error('Erro ao criar aviso:', error);
+            }
+        }
+        
+    </script> -->
+
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+@import "modern-normalize.css";
+@import "variables.css";
+
+.atomic-age-regular {
+  font-family: "Atomic Age", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.iceberg-regular {
+  font-family: "Iceberg", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+
+	display: flex;
+	flex-direction: column;
+
+	background-image: linear-gradient(var(--background-color) 60%, #000000);
+	color: var(--font-color);
+	margin: 0;
+	padding: 0;
+	
+	font-family: Iceberg, sans-serif;
+	font-size: x-large;
+	text-align: center;
+
+	height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@media (max-width: 500px) {
+	body {
+		margin: auto 5px;
+		font-size:large;
+	}
+}
+
+meu-header {
+	font-family: Atomic Age, sans-serif;
+}
+
+meu-footer {
+	color: var(--highlight-color);
+
+	position: fixed;
+	bottom: 0;
+
+	width: 100%;
+}
+
+a {
+	color: var(--font-color);
+}
+
+button, input[type="text"] {
+	border-color: var(--border-color);
+	border-width: 2px;
+	border-radius: .5rem;
+
+	color: var(--section-background-color);
+
+	background-color: transparent;
+}
+
+button {
+	padding: 5px;
+}
+
+#AvisosContainer, #avisosContainer {
+	color: var(--border-color);
+}
+
+#introduction {
+	margin-top: 15vw;
+}
