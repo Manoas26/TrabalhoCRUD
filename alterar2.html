@@ -17,21 +17,24 @@
     <meu-header></meu-header>
     <meu-nav></meu-nav>
 
+    <main>
 
-    <h2>Gerenciador de Avisos (CRUD)</h2>
-    <h3>Editar Aviso</h3>
-    <div id="mensagem">Escolha um aviso para editar.</div>
+        <h2>Gerenciador de Avisos (CRUD)</h2>
+        <h3>Editar Aviso</h3>
+        <div id="mensagem">Escolha um aviso para editar.</div>
+        
+        <!-- Formulário para Editar -->
+        <form id="AvisoForm" class="oculto">    
+            <input type="hidden" id="AvisoId">
+            <input type="text" id="AvisoTitle" placeholder="Aviso" required>
+            <button type="submit" id="submitBtn">Alterar aviso</button>
+        </form>
+
+        <div id="AvisosContainer">   
+        </div>
+
+    </main>
     
-    <!-- Formulário para Editar -->
-    <form id="AvisoForm" class="oculto">    
-        <input type="hidden" id="AvisoId">
-        <input type="text" id="AvisoTitle" placeholder="Aviso" required>
-        <button type="submit" id="submitBtn">Alterar aviso</button>
-    </form>
-
-    <div id="AvisosContainer">   
-    </div>
-
     <meu-footer></meu-footer>
 
     <script type="module" src="js/alterar2.js"></script>

@@ -17,20 +17,23 @@
     <meu-nav></meu-nav>
 
 
+    <main>
+        <h2>Gerenciador de Avisos (CRUD)</h2>
+        <h3>Criar Aviso</h3>
+        <div id="mensagem">Preencha os dados para criar um novo aviso.</div>
+        
+        <!-- Formulário para Criar -->
+        <form id="avisoForm">    
+            <input type="hidden" id="avisoId">
+            <input type="text" id="avisoTitle" placeholder="Aviso" required>
+            <button type="submit" id="submitBtn">Criar aviso</button>
+        </form>
 
-    <h2>Gerenciador de Avisos (CRUD)</h2>
-    <h3>Criar Aviso</h3>
-    <div id="mensagem">Preencha os dados para criar um novo aviso.</div>
+        <div id="avisosContainer">   
+        </div>
+
+    </main>
     
-    <!-- Formulário para Criar -->
-    <form id="avisoForm">    
-        <input type="hidden" id="avisoId">
-        <input type="text" id="avisoTitle" placeholder="Aviso" required>
-        <button type="submit" id="submitBtn">Criar aviso</button>
-    </form>
-
-    <div id="avisosContainer">   
-    </div>
     <meu-footer></meu-footer>
 
 
