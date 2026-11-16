@@ -33,7 +33,7 @@ const AvisoForm = document.querySelector('#AvisoForm');
         // Renderizar os elementos na tela
         function renderAvisos() {
             if (localAvisos.length === 0) {
-                AvisosContainer.innerHTML = '<p>Nenhuma aviso encontrada.</p>';
+                AvisosContainer.innerHTML = '<p>Nenhum aviso encontrado.</p>';
                 return;
             }
 
@@ -93,8 +93,8 @@ const AvisoForm = document.querySelector('#AvisoForm');
                 
                 AvisoForm.classList.add('oculto');
                 AvisosContainer.classList.remove('oculto');
-                mensagem.innerHTML = `Aviso alterada com sucesso! (Simulado)<br>
-                                    Escolha outra aviso para editar.`;
+                mensagem.innerHTML = `Aviso alterado com sucesso! (Simulado)<br>
+                                    Escolha outro aviso para editar.`;
                 buscarAvisos(); // Atualiza a lista de notícias após a alteração
             } catch (error) {
                 console.error('Erro ao alterar aviso:', error);

@@ -47,7 +47,7 @@
        //  DELETE - Função que envia o DELETE para a API *********
         async function deletarAviso(id) {
             console.log("entrou");
-            if (!confirm('Deseja realmente excluir esta aviso?')) return;
+            if (!confirm('Deseja realmente excluir este aviso?')) return;
 
             try {
                 const url = new URL(`${API_URL}`)

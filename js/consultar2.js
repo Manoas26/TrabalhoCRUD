@@ -30,7 +30,7 @@ const PUBLISHABLE_KEY = 'sb_publishable_EHfkh_trzI6LdvCrSFj-MQ_-QcYvmcd';
         // Renderizar os elementos na tela
         function renderavisos() {
             if (localavisos.length === 0) {
-                avisosContainer.innerHTML = '<p>Nenhuma notícia encontrada.</p>';
+                avisosContainer.innerHTML = '<p>Nenhum aviso encontrado.</p>';
                 return;
             }
 
